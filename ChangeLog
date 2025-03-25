@@ -1,6 +1,41 @@
 CHANGES
 =======
 
+2.13.0
+------
+
+* Drop auxiliary requirements files
+* Drop requirements.txt
+* Drop support for Python 3.6
+* Evacuate most metadata out of setup.cfg
+* Use PBR's pyproject.toml build-backend support
+* Drop tox.ini
+* Remove remaining code for Python < 3.6
+
+2.12.0
+------
+
+* Add a release note about adding PopOS support
+* Add a release note about dropping Python 2.7/3.5
+* Move stray release note into the correct location
+* Add testing for Debian testing and unstable
+* Fix Python version guessing logic for Debian Sid
+* Support and prefer unittest.mock
+* Update for newer Python, Tox and Hacking
+* Drop centos 8 stream jobs
+* Add centos-9-stream and ubuntu-jammy functional testing
+* Drop centos-7 and ubuntu-xenial testing
+* Drop bindep-opensuse-15 job
+* Add classifiers for py310, py311
+* Drop Python 2.7/3.5 testing and support
+* Drop fedora-latest test job
+* Fix bindep on Arch with packaging>=22.0
+* Use nox
+* Fix spelling of "unknown"
+* Drop unit tests autodoc from contributor docs
+* Add support for popos
+* Publish documentation at every release
+
 2.11.0
 ------
 
@@ -11,6 +46,8 @@ CHANGES
 ------
 
 * Replace centos-8 with centos-8-stream
+* Update formatting of author\_email in setup.cfg
+* Update test tool to use stestr
 * Handle no newline at the end of bindep.txt
 
 2.10.1
